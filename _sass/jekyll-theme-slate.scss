@@ -310,6 +310,11 @@ Full-Width Styles
   text-shadow: #111 0px 0px 10px;
 }
 
+#header_nav {
+  position: fixed;
+  top: 3em;
+}
+
 #downloads {
   position: absolute;
   width: 210px;
@@ -327,7 +332,7 @@ Full-Width Styles
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
+  background: url('../images/sprite_download.png') no-repeat bottom left;
 }
 
 .tar_download_link {
