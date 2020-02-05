@@ -324,7 +324,9 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: linear-gradient(#373737 13.29em, transparent 13.29em);;
+  background: linear-gradient(#373737 13.29em, transparent 13.29em);
+  position: absolute;
+  top: 0;
   width: 100%;
   z-index: 999;
 }
