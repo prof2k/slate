@@ -443,7 +443,7 @@ Full-Width Styles
   position: fixed;
   top: 16em;
   left: 2vw;
-  right: calc(((100vw - 640px) / 2) + 650px);
+  right: calc(((100vw - 640px) / 2) + 660px);
   display: flex;
   flex-direction: column;
 }
@@ -452,6 +452,7 @@ Full-Width Styles
   display: block;
   text-align: right;
   padding: 5px 0;
+  padding-left: 5px;
   color: #444;
   max-width: calc((100vw - 640px) / 2);
 }
