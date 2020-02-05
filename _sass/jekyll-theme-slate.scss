@@ -398,10 +398,19 @@ Full-Width Styles
 
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
+  animation: alive .6s ease-in-out 1;
 }
 
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
+  animation: alive 1s ease-in-out 1;
+
+}
+
+@keyframes alive {
+  20% {
+    transform: rotate(-30deg) translateY(10px);
+  }
 }
 
 #main_content_wrap {
