@@ -451,6 +451,8 @@ Full-Width Styles
 #main_nav a {
   display: block;
   text-align: right;
+  padding: 5px 0;
+  color: #444;
   max-width: calc((100vw - 640px) / 2);
 }
 
