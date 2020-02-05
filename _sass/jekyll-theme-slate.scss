@@ -365,11 +365,11 @@ Full-Width Styles
 }
 
 #downloads:hover {
-  animation: downloading .5s ease-in-out infinite;
+  animation: downloading 1.1s ease-in-out infinite;
 }
 
 @keyframes downloading {
-  100% {
+  50% {
     background-position-y: 50%;
   }
 }
