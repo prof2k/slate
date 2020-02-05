@@ -445,10 +445,19 @@ Full-Width Styles
 }
 
 #main_nav {
-  position: fixed;
-  top: 16em;
+  position: absolute;
+  top: 0;
+  bottom: 8em;
   left: 2vw;
   right: calc(((100vw - 640px) / 2) + 670px);
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding-top: 4em;
+}
+
+#main_nav > div {
+  position: sticky;
+  top: 8em;
   display: flex;
   flex-direction: column;
 }
