@@ -333,6 +333,14 @@ Full-Width Styles
   background: -ms-linear-gradient(top, #373737, #212121);
   background: -o-linear-gradient(top, #373737, #212121);
   background: linear-gradient(to top, #373737, #212121);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#header_wrap+* {
+  margin-top: 16.5em;
 }
 
 #header_wrap .inner {
