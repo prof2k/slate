@@ -436,6 +436,22 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
+  position: relative;
+}
+
+#main_nav {
+  position: fixed;
+  top: 0;
+  left: 2vw;
+  right: calc(((100vw - 640) / 2) + 650px);
+  display: flex;
+  flex-direction: column;
+}
+
+#main_nav a {
+  display: block;
+  text-align: left;
+  max-width: calc((100vw - 640) / 2);
 }
 
 #main_content {
