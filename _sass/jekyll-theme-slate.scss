@@ -482,6 +482,11 @@ Full-Width Styles
   box-shadow: -3px 2px 5px rgba(0,0,0,.1);
 }
 
+#main_nav a:first-child {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 #main_content {
   padding-top: 40px;
 }
