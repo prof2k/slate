@@ -366,6 +366,7 @@ Full-Width Styles
 
 #downloads:hover {
   animation: downloading 1.1s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 @keyframes downloading {
@@ -399,12 +400,13 @@ Full-Width Styles
 .zip_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top left;
   animation: alive .6s ease-in-out 1;
+  animation-delay: 100ms;
 }
 
 .tar_download_link:hover {
   background: url(../images/sprite_download.png) no-repeat top right;
-  animation: alive 1s ease-in-out 1;
-
+  animation: alive .6s ease-in-out 1;
+  animation-delay: 100ms;
 }
 
 @keyframes alive {
