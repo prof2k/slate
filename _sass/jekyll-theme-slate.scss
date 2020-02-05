@@ -301,10 +301,12 @@ Full-Width Styles
   background: #0076dc;
   z-index: -1;
   transition: inherit;
+  border-left: 4px solid #fff;
 }
 
 #forkme_banner:hover::before {
   right: 0;
+  border-color: #0076dc;
 }
 
 #header_wrap {
@@ -360,6 +362,16 @@ Full-Width Styles
   background: url('../images/icon_download.png') no-repeat 0% 90%;
   padding-left: 20px;
   transform: scale(.8);
+}
+
+#download:hover {
+  animation: downloading .5s ease-in-out infinite;
+}
+
+@keyframes downloading {
+  100% {
+    background-position-y: 50%;
+  }
 }
 
 .zip_download_link {
