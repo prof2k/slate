@@ -441,7 +441,7 @@ Full-Width Styles
 
 #main_nav {
   position: fixed;
-  top: 0;
+  top: 16em;
   left: 2vw;
   right: calc(((100vw - 640px) / 2) + 650px);
   display: flex;
@@ -450,7 +450,7 @@ Full-Width Styles
 
 #main_nav a {
   display: block;
-  text-align: left;
+  text-align: right;
   max-width: calc((100vw - 640px) / 2);
 }
 
