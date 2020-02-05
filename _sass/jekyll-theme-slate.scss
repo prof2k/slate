@@ -51,6 +51,7 @@ body {
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
+  padding-top: 16.5em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -324,14 +325,8 @@ Full-Width Styles
 
 #header_wrap {
   background: linear-gradient(#373737 13.29em, transparent 13.29em);;
-  position: fixed;
-  top: 0;
   width: 100%;
   z-index: 999;
-}
-
-#header_wrap+* {
-  margin-top: 16.5em;
 }
 
 #header_wrap .inner {
