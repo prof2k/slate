@@ -285,9 +285,9 @@ Full-Width Styles
 }
 
 #forkme_banner:hover {
-  box-shadow: 0;
+  box-shadow: none;
   text-decoration: none;
-  padding-left: 2.3em;
+  padding-left: 3em;
 }
 
 #forkme_banner::before {
