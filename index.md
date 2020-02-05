@@ -58,7 +58,7 @@ end
 | ok           | good `oreos`      | hmm   |
 | ok           | good `zoute` drop | yumm  |
 
-### There's a horizontal rule below this. {#horizontal_rule}
+### There's a horizontal rule below this. {#hr}
 
 * * *  
 
