@@ -451,7 +451,7 @@ Full-Width Styles
 #main_nav a {
   display: block;
   text-align: left;
-  max-width: calc((100vw - 640) / 2);
+  max-width: calc((100vw - 640px) / 2);
 }
 
 #main_content {
