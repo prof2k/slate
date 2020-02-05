@@ -92,13 +92,14 @@
         let i = 0;
         while(object[i] != undefined) {
           array.push(object[i]);
+          i++
         }
         return array;
       }
 
       function addElement(heading) {
         let nav = document.getElementById("main_nav").firstElementChild;
-        let anchor = document.createElement(a);
+        let anchor = document.createElement("a");
         anchor.textContent = heading.textContent;
         heading.setAttribute("id", `${heading.textContent}`);
         anchor.setAttribute("href", `#${heading.textContent}`)
