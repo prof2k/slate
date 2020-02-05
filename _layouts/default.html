@@ -40,7 +40,7 @@
     <div id="main_content_wrap" class="outer">
       <nav id="main_nav">
         <div>
-          <a href="#header_1">Header 1</a>
+          <!-- <a href="#header_1">Header 1</a>
           <a href="#header_2">Header 2</a>
           <a href="#header_3">Header 3</a>
           <a href="#hr">There's a horizontal rule below this.</a>
@@ -49,7 +49,7 @@
           <a href="#nl">And a nested list:</a>
           <a href="#small_image">Small image</a>
           <a href="#large_image">Large image</a>
-          <a href="#dl">Definition lists can be used with HTML syntax. </a>
+          <a href="#dl">Definition lists can be used with HTML syntax. </a> -->
         </div>
         
       </nav>
@@ -79,5 +79,34 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
+
+    <script>
+      //Code to automatically create the side nav based on content
+      //note that this code works for only h1, h2, and h3 tags specified in content and other low level heading tags are not considered.
+      let h1 = document.getElementsByTagName("h1");
+      let h2 = document.getElementsByTagName("h2");
+      let h3 = document.getElementsByTagName("h3");
+
+      function objectToArray(object) {
+        let array = [];
+        let i = 0;
+        while(object[i] != undefined) {
+          array.push(object[i]);
+        }
+        return array;
+      }
+
+      function addElement(heading) {
+        let nav = document.getElementById("main_nav").firstElementChild;
+        let anchor = document.createElement(a);
+        anchor.textContent = heading.textContent;
+        heading.setAttribute("id", `${heading.textContent}`);
+        anchor.setAttribute("href", `#${heading.textContent}`)
+        nav.append(anchor);
+      }
+
+      let headings = objectToArray(h1).concat(objectToArray(h2)).concat(objectToArray(h3));
+      headings.slice(1).forEach(heading => addElement(heading));//makes sure the first heading of the file (which is the main heading) is not considered
+    </script>
   </body>
 </html>
