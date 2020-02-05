@@ -320,6 +320,12 @@ Full-Width Styles
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
+  width: auto;
+}
+
+.header_container {
+  max-width: 640px;
+  margin: auto;
 }
 
 #project_title {
@@ -339,9 +345,7 @@ Full-Width Styles
 }
 
 #header_nav {
-  position: fixed;
-  top: 11em;
-  width: 80%;
+  // width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
