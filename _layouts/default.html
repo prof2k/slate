@@ -90,6 +90,9 @@
         let nav = document.getElementById("main_nav").firstElementChild;
         let anchor = document.createElement("a");
         anchor.textContent = heading.textContent;
+        if (heading.tagName == "H1") {
+          anchor.setAttribute("class", "main_nav_h1");
+        }
         let anchorText = heading.textContent.split(" ").join("_").toLowerCase();
         heading.setAttribute("id", `${anchorText}`);
         anchor.setAttribute("href", `#${anchorText}`)
