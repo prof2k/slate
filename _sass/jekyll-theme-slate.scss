@@ -476,6 +476,12 @@ Small Device Styles
 
 }
 
+@media (max-width: 900px) {
+  #main_nav {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 320px) {
   body {
     font-size:14px;
