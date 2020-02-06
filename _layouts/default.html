@@ -101,8 +101,9 @@
         let nav = document.getElementById("main_nav").firstElementChild;
         let anchor = document.createElement("a");
         anchor.textContent = heading.textContent;
-        heading.setAttribute("id", `${heading.textContent}`);
-        anchor.setAttribute("href", `#${heading.textContent}`)
+        let anchorText = heading.textContent.split(" ").join("_");
+        heading.setAttribute("id", `${anchorText}`);
+        anchor.setAttribute("href", `#${anchorText}`)
         nav.append(anchor);
       }
 
