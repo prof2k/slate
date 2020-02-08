@@ -72,9 +72,6 @@
     <script>
       //Code to automatically create the side nav based on content
       //note that this code works for only h1, h2, and h3 tags specified in content and other low level heading tags are not considered.
-      // let h1 = document.getElementsByTagName("h1");
-      // let h2 = document.getElementsByTagName("h2");
-      // let h3 = document.getElementsByTagName("h3");
 
       let domElements = document.getElementsByTagName("*");
       let headings = [];
@@ -94,15 +91,7 @@
         }
       }
 
-      // function objectToArray(object) {
-      //   let array = [];
-      //   let i = 0;
-      //   while(object[i] != undefined) {
-      //     array.push(object[i]);
-      //     i++
-      //   }
-      //   return array;
-      // }
+      headings.forEach(heading => addElement(heading));
 
       function addElement(heading) {
         let nav = document.getElementById("main_nav").firstElementChild;
@@ -116,8 +105,6 @@
         anchor.setAttribute("href", `#${anchorText}`)
         nav.append(anchor);
       }
-
-      headings.forEach(heading => addElement(heading));
     </script>
   </body>
 </html>
